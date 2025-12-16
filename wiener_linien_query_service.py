@@ -29,7 +29,10 @@ class WienerLinienMonitor:
         self.panel = panel
         if self.panel:
             self.display = panel.get_display()
-        
+            self.display.fill(1)  # Clear display (assuming 1 is white)
+            self.display.text("Wiener Linien Monitor - initializing", 5, 5, 0)
+            self.display.show()
+            
         self.refresh_interval = refresh_interval  # seconds
         self.get_time()
         
@@ -55,7 +58,7 @@ class WienerLinienMonitor:
             return time.localtime()
 
     def fetch_departures(self, station_id):
-        response = requests.get(self.BASE_URL + f'?rbl={station_id}')
+        response = requests.get(self.BASE_URL + f'?rbl={station_id}', timeout=10)
         if response.status_code != 200:
             raise Exception(f"Failed to fetch data: {response.status_code}")
         else:
@@ -163,13 +166,14 @@ class WienerLinienMonitor:
                     
                     data = self.fetch_departures(station_id)
                     self.parse_departures(data)
+                    gc.collect()
                 except Exception as e:
                     print(f"  Error fetching data for station {station_id}: {e}")
                 
             if self.display:
-                gc.collect()
                 try:
                     self.display_departures()
+                    time.sleep(1)
                 except Exception as e:
                     print(f"Error displaying departures: {e}")
                     
@@ -177,7 +181,7 @@ class WienerLinienMonitor:
                 self.wdt.feed()
             print(f"\nSleeping for {self.refresh_interval} seconds...\n")
             
-            if self.refresh_interval >= 30:
+            if self.refresh_interval >= 60:
                 machine.lightsleep(self.refresh_interval * 1000)  # Sleep for refresh_interval seconds
             else:
                 time.sleep(self.refresh_interval)
