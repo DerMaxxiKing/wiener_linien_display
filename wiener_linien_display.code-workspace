@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "serial:/COM5",
+			"uri": "serial://com5/"
+		}
+	],
+	"settings": {
+		"github.copilot.enable": {
+			"python": true,
+			"yaml": true
+		}
+	}
+}

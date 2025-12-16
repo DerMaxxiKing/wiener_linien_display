@@ -1,0 +1,200 @@
+{
+    "data": {
+        "monitors": [
+            {
+                "locationStop": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            16.3401843,
+                            48.2017876
+                        ]
+                    },
+                    "properties": {
+                        "name": "60200646",
+                        "title": "Kaiserstraße, Westbahnstraße ",
+                        "municipality": "Wien",
+                        "municipalityId": 49000001,
+                        "type": "stop",
+                        "coordName": "WGS84",
+                        "attributes": {
+                            "rbl": 1478
+                        }
+                    }
+                },
+                "lines": [
+                    {
+                        "name": "49",
+                        "towards": "Ring, Volkstheater U",
+                        "direction": "R",
+                        "platform": "2",
+                        "richtungsId": "2",
+                        "barrierFree": true,
+                        "realtimeSupported": true,
+                        "trafficjam": false,
+                        "departures": {
+                            "departure": [
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:08:30.000+0100",
+                                        "timeReal": "2025-12-16T20:08:04.000+0100",
+                                        "countdown": 4
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:17:30.000+0100",
+                                        "timeReal": "2025-12-16T20:16:54.000+0100",
+                                        "countdown": 13
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:26:30.000+0100",
+                                        "timeReal": "2025-12-16T20:26:10.000+0100",
+                                        "countdown": 23
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:36:30.000+0100",
+                                        "timeReal": "2025-12-16T20:36:30.000+0100",
+                                        "countdown": 33
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:46:30.000+0100",
+                                        "timeReal": "2025-12-16T20:46:30.000+0100",
+                                        "countdown": 43
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T20:56:30.000+0100",
+                                        "timeReal": "2025-12-16T20:56:30.000+0100",
+                                        "countdown": 53
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                },
+                                {
+                                    "departureTime": {
+                                        "timePlanned": "2025-12-16T21:06:30.000+0100",
+                                        "timeReal": "2025-12-16T21:06:30.000+0100",
+                                        "countdown": 63
+                                    },
+                                    "vehicle": {
+                                        "name": "49",
+                                        "towards": "Ring, Volkstheater U",
+                                        "direction": "R",
+                                        "platform": "2",
+                                        "richtungsId": "2",
+                                        "barrierFree": true,
+                                        "foldingRamp": false,
+                                        "realtimeSupported": true,
+                                        "trafficjam": false,
+                                        "type": "ptTram",
+                                        "attributes": {},
+                                        "linienId": 149
+                                    }
+                                }
+                            ]
+                        },
+                        "type": "ptTram",
+                        "lineId": 149
+                    }
+                ],
+                "attributes": {}
+            }
+        ]
+    },
+    "message": {
+        "value": "OK",
+        "messageCode": 1,
+        "serverTime": "2025-12-16T20:03:09.000+0100"
+    }
+}
