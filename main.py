@@ -14,7 +14,7 @@ def main():
     with open("config.json", "r") as file:
         config = load(file)
         
-    wdt = WDT(timeout=int(config.get("wdt_interval", 6000)))
+    wdt = WDT(timeout=int(config.get("wdt_interval", 600))*1000)
     wdt.feed()
     # wdt=None
         

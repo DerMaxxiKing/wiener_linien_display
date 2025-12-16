@@ -176,28 +176,11 @@ class WienerLinienMonitor:
             if self.wdt:
                 self.wdt.feed()
             print(f"\nSleeping for {self.refresh_interval} seconds...\n")
-            #machine.lightsleep(self.refresh_interval * 1000)  # Sleep for refresh_interval seconds
-            time.sleep(self.refresh_interval)
+            
+            if self.refresh_interval >= 30:
+                machine.lightsleep(self.refresh_interval * 1000)  # Sleep for refresh_interval seconds
+            else:
+                time.sleep(self.refresh_interval)
             if self.wdt:
                 self.wdt.feed()
-
-
-# Example usage:
-if __name__ == "__main__":
-    
-    from wlan import WLANManager
-    
-    wlan_manager = WLANManager(
-        ssid="FRITZ!Box 7583 MN",
-        password="89735496680491172304",
-        timeout=15
-    )
-    wlan_manager.connect()
-    print(wlan_manager.is_connected())
-    
-    # Replace with your desired station IDs (RBL numbers)
-    station_ids = [2139, 1444]
-    monitor = WienerLinienMonitor(station_ids)
-    monitor.display_departures()
-    
     
